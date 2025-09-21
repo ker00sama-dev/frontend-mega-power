@@ -1,0 +1,439 @@
+:root {
+    --main: #f9f9f9;
+    --second: #1982c4;
+    --font-color: #333333;
+    --product-color: #efefef;
+}
+
+body {
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    width: 90%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 9%;
+    margin-right: 5px;
+}
+
+.company-name {
+    font-size: 2.5vw;
+    color: var(--font-color);
+}
+
+.slogan {
+    font-size: 1.8vw;
+}
+
+.header-hr {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.description {
+    width: 80%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 10px 0px;
+}
+
+.description p {
+    font-size: 2vw;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.section-header {
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3vw;
+    margin-bottom: 0px;
+    color: var(--font-color);
+    text-align: center;
+}
+
+.section-hr {
+    width: 30%;
+}
+
+/* Product layout */
+.products-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--product-color);
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.product {
+    display: flex;
+    background-color: var(--product-color);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.product-info h3 {
+    margin-top: 0;
+    font-size: 2.2vw;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 2vw;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Infinite scroll bar */
+.customer-logos {
+    width: 90%;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 9vw 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logos-slider {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: slide 30s linear infinite;
+}
+
+.slide {
+    width: 12vw; /* 7 slides * 12vw = 84vw, fits within 90% viewport */
+    margin: 0 0.5vw;
+    margin:8vw;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    height: 10vw;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.slide img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: var(--main);
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    font-size: 1.1vw;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 50px;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1877F2;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        background-color: var(--main);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    header {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    .company-name {
+        font-size: 5vw;
+        color: var(--font-color);
+    }
+
+    .slogan {
+        font-size: 4vw;
+        color: var(--font-color);
+    }
+
+    .header-hr {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .description {
+        width: 90%;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        text-align: center;
+    }
+
+    .description p {
+        font-size: 4vw;
+        color: var(--font-color);
+    }
+
+    .section-header {
+        font-family: "Oleo Script Swash Caps", system-ui;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 10vw;
+        color: var(--font-color);
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .section-hr {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .products-section {
+        text-align: center;
+        padding: 30px 20px;
+        background-color: var(--product-color);
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .product {
+        display: flex;
+        background-color: var(--product-color);
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 90%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-image img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .product-info {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .product-info h3 {
+        font-size: 4vw;
+        color: #333;
+    }
+
+    .product-info p {
+        font-size: 3.5vw;
+        color: #555;
+    }
+
+    .customer-logos {
+        width: 100%;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 10vw 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos-slider {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        animation: slide 20s linear infinite;
+    }
+
+    .slide {
+        width: 23vw; /* 4 slides * 23vw = 92vw, fits within 100% viewport */
+        margin: 0 6vw;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slide img {
+        height: 15vw;
+        margin:3vw;
+        width: auto;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .footer {
+        background-color: #333;
+        color: var(--main);
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        width: 100%;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-contact p {
+        margin-bottom: 10px;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icon {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #aaa;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+    }
+}
