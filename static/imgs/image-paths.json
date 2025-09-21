@@ -1,0 +1,56 @@
+{
+  "logo": {
+    "main": "/static/imgs/logo-pure.jpg",
+    "alt": "MEGAPOWER Logo"
+  },
+  "products": {
+    "luxury_matches_shape_1": {
+      "path": "/static/imgs/Products/luxury-matches-shape-1.jpeg",
+      "alt": "Luxury Matches Shape 1.0 - Premium Hotel Amenity"
+    },
+    "enhanced_matches_shape_1_1": {
+      "path": "/static/imgs/Products/enhanced-matches-shape-1-1.jpeg",
+      "alt": "Enhanced Matches Shape 1.1 - Luxury Hotel Matches"
+    },
+    "compact_matches_shape_2": {
+      "path": "/static/imgs/Products/compact-matches-shape-2.jpeg",
+      "alt": "Compact Matches Shape 2.0 - Hotel Amenity Solution"
+    },
+    "sanitary_bag_dispenser": {
+      "path": "/static/imgs/Products/sanitary-bag-dispenser.jpeg",
+      "alt": "Sanitary Bag Dispenser - Hotel Bathroom Amenity"
+    },
+    "unused_product": {
+      "path": "/static/imgs/Products/product_sanitary_dispenser.jpeg",
+      "alt": "Additional Sanitary Dispenser Product"
+    }
+  },
+  "partners": {
+    "hotel_1": { "path": "/static/imgs/hotel1.jpg", "alt": "Luxury Hotel Partner" },
+    "hotel_2": { "path": "/static/imgs/hotel2.png", "alt": "Premium Resort Partner" },
+    "hotel_3": { "path": "/static/imgs/hotel3.png", "alt": "Elite Hotel Chain" },
+    "hotel_4": { "path": "/static/imgs/hotel4.png", "alt": "Five-Star Hotel" },
+    "hotel_5": { "path": "/static/imgs/hotel5.png", "alt": "Boutique Hotel" },
+    "hotel_6": { "path": "/static/imgs/hotel6.png", "alt": "Luxury Resort" },
+    "hotel_7": { "path": "/static/imgs/hotel7.jpeg", "alt": "International Hotel" },
+    "hotel_8": { "path": "/static/imgs/hotel8.png", "alt": "Hotel Chain" },
+    "hotel_9": { "path": "/static/imgs/hotel9.png", "alt": "Luxury Hotel Partner" },
+    "hotel_10": { "path": "/static/imgs/hotel10.jpg", "alt": "Premium Resort Partner" },
+    "hotel_11": { "path": "/static/imgs/hotel11.jpg", "alt": "Elite Hotel Chain" },
+    "hotel_12": { "path": "/static/imgs/hotel12.png", "alt": "Five-Star Hotel" },
+    "hotel_13": { "path": "/static/imgs/hotel13.jpg", "alt": "Boutique Hotel" },
+    "hotel_14": { "path": "/static/imgs/hotel14.png", "alt": "Luxury Resort" },
+    "hotel_15": { "path": "/static/imgs/hotel15.png", "alt": "International Hotel" },
+    "hotel_16": { "path": "/static/imgs/hotel16.png", "alt": "Hotel Chain" }
+  },
+  "banners": {
+    "main_banner": {
+      "path": "/static/imgs/banner.png",
+      "alt": "MEGAPOWER - Premium Hotel Amenities & Solutions"
+    }
+  },
+  "meta": {
+    "og_image": "/static/imgs/banner.png",
+    "twitter_image": "/static/imgs/banner.png"
+  }
+}
